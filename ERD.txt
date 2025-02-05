@@ -1,0 +1,36 @@
+   +-----------------+          +-----------------+
+    |    Authors     |          |     Books      |
+    +-----------------+         +-----------------+
+    | AuthorID    (PK)|<---     | BookID      (PK)|
+    | Name            |    |    | Title           |
+    | Rating          |    |    | Price           |
+    | Origin          |    |    | Publication     |
+    | Email           |    |    | Author_name     |
+    +-----------------+    ---> | AuthorID  (FK)  |
+                                +-----------------+
+ 
+
+Description - 
+
+ERD - Database : Bookstore 
+
+
+tables : Authors , Books 
+
+
+Authors
+---------------------------
+AuthorID - int , Primary Key 
+Name - varchar(30) Not null
+Rating - float check >=0 and =<5
+origin - varchar(20)Not null
+Email  - varchar(25)
+
+Books 
+-------------------------------
+BookID - int, Primary Key 
+Title - varchar(50) Not null
+Price - float Not null , check <=0
+Publication - varchar(30)
+Author_name - varchar(30)
+AuthorID - int Foreign key references Authors(AuthorID)
