@@ -1,7 +1,11 @@
 # project_library
 
-query 1
+ERD - gives layout of our db
 
-ans
+madel - tables prparation for db
 
-op -
+data - data for the database
+
+operation - analyze the outcomes for various scenarios 
+
+events & triggers - for advance oprations
